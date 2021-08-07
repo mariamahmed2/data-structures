@@ -18,7 +18,6 @@ void MoveDisks(int count, int start, int finish, int temp)
     {
         MoveDisks(count - 1, start, temp, finish);
         printf("Move disk % d from % d to % d\n", count, start, finish);
-        //This step of printf is the base condition.
         MoveDisks(count - 1, temp, finish, start);
     }
 }
